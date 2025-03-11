@@ -1,0 +1,74 @@
+/* استايل عام */
+body {
+    font-family: 'Sans-serif';
+    background-color: #D8C9AE;
+    color: #575757;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* العناوين */
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.book-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* صورة الكتاب */
+.book-cover img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.book-cover img:hover {
+    transform: scale(1.05);
+}
+
+/* قائمة الصوتيات */
+.audio-list {
+    margin-top: 20px;
+}
+
+.audio-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.audio-item:hover {
+    background: #e0e0e0;
+}
+
+/* علامة الصح */
+.checkmark {
+    font-size: 20px;
+    color: green;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.show-checkmark {
+    visibility: visible;
+    opacity: 1;
+}
